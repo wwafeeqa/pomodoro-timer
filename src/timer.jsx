@@ -86,18 +86,18 @@ function Timer() {
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
       <main className="timer h-screen flex flex-col justify-center items-center dark:bg-this-black bg-this-white">
-        <div className="text-center space-x-2 mb-4">
-          <button onClick={pomodoro} className="bg-yellow dark:bg-purple dark:hover:bg-this-black hover:outline hover:bg-this-white font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-1 px-3 rounded-full text-xs">pomodoro</button>
-          <button onClick={shortBreak} className="bg-yellow dark:bg-purple dark:hover:bg-this-black hover:outline hover:bg-this-white font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-1 px-3 rounded-full text-xs">short break</button>
-          <button onClick={longBreak} className="bg-yellow dark:bg-purple dark:hover:bg-this-black hover:outline hover:bg-this-white font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-1 px-3 rounded-full text-xs">long break</button>
+        <div className="text-center space-x-8 mb-16">
+          <button onClick={pomodoro} className=" bg-yellow dark:bg-purple dark:hover:bg-this-black hover:outline hover:bg-this-white font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-3 px-7 rounded-full text-2xl">pomodoro</button>
+          <button onClick={shortBreak} className="bg-yellow dark:bg-purple dark:hover:bg-this-black hover:outline hover:bg-this-white font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-3 px-7 rounded-full text-2xl">short break</button>
+          <button onClick={longBreak} className="bg-yellow dark:bg-purple dark:hover:bg-this-black hover:outline hover:bg-this-white font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-3 px-7 rounded-full text-2xl">long break</button>
         </div>    
-        <div className="text-center text-5xl font-semibold font-gotham-italic mb-4 dark:text-yellow text-purple">{formatTime()}</div>
-        <div className="text-center space-x-2">
-          <button onClick={start} className="bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-1 px-3 rounded-full text-xs">start</button>
-          <button onClick={stop} className="bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-1 px-3 rounded-full text-xs">stop</button>
-          <button onClick={reset} className="bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-1 px-3 rounded-full text-xs">reset</button>
+        <div className="text-center text-9xl font-semibold font-gotham-italic mb-16 dark:text-yellow text-purple">{formatTime()}</div>
+        <div className="text-center space-x-8">
+          <button onClick={start} className="bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-3 px-7 rounded-full text-2xl">start</button>
+          <button onClick={stop} className="bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-3 px-7 rounded-full text-2xl">stop</button>
+          <button onClick={reset} className="bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black py-3 px-7 rounded-full text-2xl">reset</button>
         </div>
-        <button onClick={toggleDarkMode} className="flex items-center text-center justify-center absolute w-6 h-6 bottom-4 right-4 bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black rounded-full text-xs">
+        <button onClick={toggleDarkMode} className="flex items-center text-center justify-center absolute w-16 h-16 bottom-12 right-12 bg-yellow dark:bg-purple hover:outline hover:bg-this-white dark:hover:bg-this-black font-gotham-bold hover:text-purple dark:hover:text-yellow text-this-black rounded-full text-2xl">
           {darkMode ? <FaSun/> : <FaMoon/>}
         </button>
       </main>
